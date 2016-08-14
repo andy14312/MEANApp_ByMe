@@ -1,0 +1,18 @@
+{
+  "name": "meanappbyme",
+  "description": "A small application using MEAN stack which shows user profiles and their course list",
+  "main": "index.js",
+  "authors": [
+    "anand mutyala"
+  ],
+  "license": "ISC",
+  "homepage": "",
+  "private": true,
+  "dependencies": {
+    "jquery": "^3.1.0",
+    "toastr": "^2.1.3",
+    "angular": "^1.5.8",
+    "angular-resource": "^1.5.8",
+    "angular-route": "^1.5.8"
+  }
+}
