@@ -8,3 +8,13 @@ exports.getCourses = function(req,res) {
         res.send(collection);
     });
 }
+
+exports.getCourseById = function(req,res) {
+  Course.findOne({_id:req.params.id}).exec(function(err,course){
+    if(err) {
+      res.send(500);
+    }
+    console.log('type of course output',typeof course);
+    res.send(course);
+  });
+}
