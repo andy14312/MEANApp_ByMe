@@ -35,6 +35,10 @@ angular.module('app').config(function ($routeProvider, $locationProvider) {
         templateUrl: '/partials/courses/course-list',
         controller: 'mvCourseListCtrl'
     });
+    $routeProvider.when('/courses/:id',{
+      templateUrl: '/partials/courses/course-details',
+      controller: 'mvCourseDetailCtrl'
+    });
 });
 app.controller('profile', function () {
     this.name = 'Anand Mutyala';
